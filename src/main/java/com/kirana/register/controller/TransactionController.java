@@ -19,5 +19,15 @@ public class TransactionController {
         List<TransactionResponse> transactions = transactionService.getTransactionsByType(type);
         return ResponseEntity.ok(transactions);
     }
+
+
+    @GetMapping("/report")
+    public ResponseEntity<List<TransactionReportResponse>> getTransactionReport(
+            @RequestParam(name = "range") String range,
+            @RequestParam(name = "storeId") Long storeId) {
+
+        List<TransactionReportResponse> transactionReports = transactionService.getTransactionReport(range, storeId);
+        return ResponseEntity.ok(transactionReports);
+    }
 }
 

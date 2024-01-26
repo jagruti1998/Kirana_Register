@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Getter
@@ -24,6 +25,8 @@ public class Transaction {
     private TransactionType type;
 
     private String description;
+    private LocalDate date;
+
     private BigDecimal amount;
     private String currency;
     private LocalDateTime timestamp;
