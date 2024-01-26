@@ -1,6 +1,5 @@
 package com.kirana.register.controller;
 
-
 import com.kirana.register.service.TransactionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -21,3 +20,4 @@ public class TransactionController {
         return ResponseEntity.ok(transactions);
     }
 }
+
