@@ -1,28 +1,18 @@
 Develop a backend service designed to empower Kirana stores in managing their
 transaction registers. This service aims to facilitate the daily tracking of all credit and debit
 transactions, providing a comprehensive solution for effective financial record-keeping.
-# Online grocery-store
+# Online Kirana-Store
 
-## Micro Services built on Spring Boot with Mongo DB for E-Commerce application.
+## Backend Services built on Spring Boot with MySQL to empower Kirana stores in managing their transaction registers.
+This service aims to facilitate the daily tracking of all credit and debit
+transactions, providing a comprehensive solution for effective financial record-keeping.
 
 Users
 
-1. Customers
-2. Employees
-3. Caretakers
-4. Products
 
 ## Microservices for Grocery Store
 
-CustomerRegistrationService
-CustomerLoginService
-ProductCatalogueService
-ShoppingCartService
-ProductSaleService
-OrderDeliveryService
-InvoiceAndPaymentService
-ProductWarehouseService
-CustomerRegistrationService
+
 
 ## Endpoints:
 
