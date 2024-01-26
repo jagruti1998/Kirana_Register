@@ -1,19 +1,12 @@
 package com.kirana.register.repository;
 
 import com.kirana.register.entity.Transaction;
-import com.kirana.register.entity.TransactionType;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
+import java.util.UUID;
 
-
-@Repository
-public interface TransactionRepository extends JpaRepository<Transaction, Long> {
-
-    List<Transaction> findByType(TransactionType type);
-    List<Transaction> findByDateRangeAndStoreId(LocalDate startDate, LocalDate endDate, Long storeId);
-
-
+public interface TransactionRepository extends JpaRepository<Transaction, UUID> {
+    List<Transaction> findByTimestampBetween(LocalDateTime startDateTime, LocalDateTime endDateTime);
 }
